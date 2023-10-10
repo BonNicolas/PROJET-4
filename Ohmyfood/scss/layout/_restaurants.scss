@@ -45,15 +45,15 @@
 .menu-container-title{
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 10px;
-    width: 320px;
     max-width: 100%;
 
     &__text{
         font-family: $second-font;
         font-size: 28px;
         margin-bottom: 10px;
+        margin-right: 20px;
     }
 }
 
@@ -104,11 +104,9 @@
     }
 
     .menu-container-title{
-        justify-content: center;
         width: 640px;
 
         &__text{
-            margin-right: 20px;
             margin-bottom: 25px;
             margin-top: 45px;
         }

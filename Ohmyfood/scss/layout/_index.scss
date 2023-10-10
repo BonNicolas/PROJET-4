@@ -1,0 +1,174 @@
+/********** FIND RESTAURANT **********/
+.find-restaurant{
+    margin-bottom: 25px;
+}
+
+.find-restaurant-location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: $darkgrey-bg-color;
+    background-color: $grey-bg-color;
+
+        &__text{
+            margin-left: 20px;
+            font-weight: 600;
+        }
+}
+
+.find-restaurant-reservation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 270px;
+    padding-top: 15px;
+    text-align: center;
+    background-color: $lightgrey-bg-color;
+}
+
+.reservation-container{
+    width: 370px;
+    max-width: 100%;
+    margin: 0 2%;
+}
+
+/********** FIND RESTAURANT FIN **********/
+
+/********** FUNCTIONALITY **********/
+
+.functionality{
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    height: 420px;
+
+        &__title{
+            margin-bottom: 25px;
+        }
+}
+
+.functionality-container{
+    width: 375px;
+    max-width: 100%;
+}
+
+.functionality-explications{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.explication{
+    display: flex;
+    align-items: center;
+    background-color: $lightgrey-bg-color;
+    margin-left: 10px;
+    height: 75px;
+    border-radius: 20px;
+    @include button-shadow ($shadow-lighter);
+
+        &__numero{
+        position: relative;
+        right: 10px;
+        color: white;
+        background-color: $primary-color;
+        padding: 3px 8px;
+        border-radius: 30px;
+        margin-right: 10px;
+        }
+
+        &__icon{
+        color: #7e7e7e;
+        margin-right: 20px;
+
+            &--purple{
+                color: $primary-color;
+            }
+        }
+}
+
+/********** FUNCTIONALITY FIN **********/
+
+/********** RESTAURANTS **********/
+
+.restaurants{
+    display: flex;
+    justify-content: center;
+    padding: 0 5%;
+    height: 1215px;
+    background-color: $lightgrey-bg-color;
+}
+
+.restaurants-container{
+    width: 375px;
+    max-width: 100%;
+
+    & h2{
+        margin-top: 50px;
+    }
+}
+
+/********** RESTAURANTS FIN **********/
+
+/****** Media queries ***********/
+/* Medium devices (tablets, more than 768px) */
+@media (min-width: 769px) {
+
+    .main-container {
+        max-width: 100%;
+    }
+
+    .find-restaurant-reservation{
+        height: 230px;
+    }
+
+    .reservation-container{
+        width: 1065px;
+        max-width: 100%;
+        margin: 0 2%;
+    
+            & h2{
+            font-size: 40px;
+            margin-top: 15px;
+            }
+    }
+
+    .functionality{
+        height: 200px;
+    }
+
+    .functionality-container{
+        width: 1065px;
+        max-width: 100%;
+    }
+
+    .functionality-explications{
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .explication{
+        width: 100%;
+    }
+
+    .restaurants{
+        height: 670px;
+    }
+        
+    .restaurants-container{
+        width: 1065px;
+        max-width: 100%;
+
+            & h2{
+            margin-top: 30px;
+            }
+    }
+    .restaurants-cards{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}

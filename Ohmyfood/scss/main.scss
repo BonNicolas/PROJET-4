@@ -1,0 +1,38 @@
+@import "./utils/variables-mixins";
+@import "./components/buttons";
+@import "./components/cards";
+@import "./layout/header";
+@import "./layout/index";
+@import "./layout/restaurants";
+@import "./layout/footer";
+@import "./components/loader";
+
+/********** GENERAL **********/
+*{
+    font-family: $primary-font;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.main-container {
+    width: 100%;
+    min-width: 260px;
+    box-sizing: border-box;
+    
+}
+
+/********** GENERAL FIN **********/
+
+/****** Media queries ***********/
+/* Medium devices (tablets, more than 768px) */
+@media (min-width: 769px) {
+
+    .main-container {
+        max-width: 100%;
+    }
+
+}
