@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,18 +11,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/main.css" rel="stylesheet">
+    <link href="scss/main.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="main-container">
         <div class="loader">
-            <div class="loader-container">
-            <div class="ball"></div>
-            <div class="ball ball--two"></div>
-            <div class="ball ball--three"></div>
-            <div class="shadow"></div>
-            <div class="shadow shadow--two"></div>
-            <div class="shadow shadow--three"></div>
+            <div class="loader__container">
+                <div class="loader__ball"></div>
+                <div class="loader__ball loader__ball--two"></div>
+                <div class="loader__ball loader__ball--three"></div>
+                <div class="loader__shadow"></div>
+                <div class="loader__shadow loader__shadow--two"></div>
+                <div class="loader__shadow loader__shadow--three"></div>
             </div>
         </div>
         <header class="main-header">
@@ -29,44 +31,44 @@
         </header>
         <main>
             <section class="find-restaurant">
-                <div class="find-restaurant-location">
+                <div class="find-restaurant__location">
                     <i class="fa-solid fa-location-dot"></i>
-                    <p class="find-restaurant-location__text">Paris, Belleville</p>                 
+                    <p>Paris, Belleville</p>
                 </div>
-                <div class="find-restaurant-reservation">
-                    <div class="reservation-container">
+                <div class="find-restaurant__reservation">
+                    <div class="find-restaurant__container">
                         <h2>Réservez le menu qui vous convient</h2>
                         <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
                         <a class="btn" href="#">Explorer nos restaurants</a>
                     </div>
-                </div>                
+                </div>
             </section>
             <section class="functionality">
-                <div class="functionality-container">
+                <div class="functionality__container">
                     <h2 class="functionality__title">Fonctionnement</h2>
-                    <div class="functionality-explications">
-                    <article class="explication">
-                        <p class="explication__numero">1</p>
-                        <i class="explication__icon fa-solid fa-mobile-screen-button fa-lg fa-fw"></i>
-                        <h4>Choisissez un restaurant</h4>
-                    </article>
-                    <article class="explication">
-                        <p class="explication__numero">2</p>
-                        <i class="explication__icon fa-solid fa-list-ul fa-lg fa-fw"></i>
-                        <h4>Composez votre menu</h4>
-                    </article>
-                    <article class="explication">
-                        <p class="explication__numero">3</p>
-                        <i class="explication__icon explication__icon--purple fa-solid fa-store fa-lg fa-fw"></i>
-                        <h4>Dégustez un restaurant</h4>
-                    </article>
+                    <div class="functionality__explications">
+                        <article class="explication">
+                            <p class="explication__numero">1</p>
+                            <i class="explication__icon fa-solid fa-mobile-screen-button fa-lg fa-fw"></i>
+                            <h4>Choisissez un restaurant</h4>
+                        </article>
+                        <article class="explication">
+                            <p class="explication__numero">2</p>
+                            <i class="explication__icon fa-solid fa-list-ul fa-lg fa-fw"></i>
+                            <h4>Composez votre menu</h4>
+                        </article>
+                        <article class="explication">
+                            <p class="explication__numero">3</p>
+                            <i class="explication__icon explication__icon--purple fa-solid fa-store fa-lg fa-fw"></i>
+                            <h4>Dégustez un restaurant</h4>
+                        </article>
                     </div>
                 </div>
             </section>
             <section class="restaurants">
-                <div class="restaurants-container">
+                <div class="restaurants__container">
                     <h2>Restaurants</h2>
-                    <div class="restaurants-cards">
+                    <div class="restaurants__cards">
                         <article class="card">
                             <a class="cta" href="palette-du-gout.html">
                                 <img class="card__image card__image--reposition" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image restaurant La palette du goût">
@@ -100,7 +102,7 @@
                             </a>
                         </article>
                     </div>
-                    <div class="restaurants-cards">
+                    <div class="restaurants__cards">
                         <article class="card">
                             <a class="cta" href="la-française.html">
                                 <img class="card__image" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image restaurant À la française">
@@ -110,8 +112,10 @@
                                         <p class="card-textes__location">Cité Rouge</p>
                                     </div>
                                     <div class="card-icons">
-                                        <i class="card-icons__heart card-icons__heart--empty fa-regular fa-heart fa-xl"></i>
-                                        <i class="card-icons__heart card-icons__heart--full fa-solid fa-heart fa-xl"></i>
+                                        <i
+                                            class="card-icons__heart card-icons__heart--empty fa-regular fa-heart fa-xl"></i>
+                                        <i
+                                            class="card-icons__heart card-icons__heart--full fa-solid fa-heart fa-xl"></i>
                                     </div>
                                 </div>
                             </a>
@@ -133,19 +137,20 @@
                         </article>
                     </div>
                 </div>
-            </section> 
+            </section>
         </main>
         <footer class="main-footer">
-            <div class="footer-container">
-                <img class="footer-container__logo" src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
-                <ul class="footer-container-list">
-                <li class="footer-container-list__iconline footer-container-list__iconline--space-one"><i class="fa-solid fa-utensils fa-xs"></i>Proposer un restaurant</li>
-                <li class="footer-container-list__iconline footer-container-list__iconline--space-two"><i class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</li>
-                <li>Mentions légales</li>
-                <li><a class="cta cta--contact" href="mailto:contact@ohmyfood.com">Contact</a></li>
+            <div class="main-footer__container">
+                <img class="main-footer__logo" src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
+                <ul class="main-footer-list">
+                    <li class="main-footer-list__iconline main-footer-list__iconline--space-one"><i class="fa-solid fa-utensils fa-xs"></i>Proposer un restaurant</li>
+                    <li class="main-footer-list__iconline main-footer-list__iconline--space-two"><i class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</li>
+                    <li>Mentions légales</li>
+                    <li><a class="cta cta--contact" href="mailto:contact@ohmyfood.com">Contact</a></li>
                 </ul>
             </div>
         </footer>
     </div>
 </body>
+
 </html>

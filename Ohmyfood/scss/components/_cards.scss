@@ -1,13 +1,13 @@
 /********** CARDS **********/
 
-.card{
+.card {
     position: relative;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 20px;
     overflow: hidden;
 
-    &__image{
+    &__image {
         width: 100%;
         height: 170px;
         border-top-left-radius: 20px;
@@ -15,12 +15,12 @@
         object-fit: cover;
         object-position: 0% 100%;
 
-            &--reposition{
-                object-position: 0% 61%;
-            }
+        &--reposition {
+            object-position: 0% 61%;
+        }
     }
 
-    &__new{
+    &__new {
         position: absolute;
         top: 15px;
         right: 15px;
@@ -32,20 +32,20 @@
         color: darken($tertiary-color, 45%);
     }
 
-    &--shadow{
+    &--shadow {
         filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
     }
 
     /* check animation */
 
-    &--page-restaurant{
+    &--page-restaurant {
 
-        &:hover{
-            .card-content{
+        &:hover {
+            .card-content {
                 width: calc(100% - 70px);
             }
-    
-            .card-hidden{
+
+            .card-hidden {
                 transform: translateX(0);
             }
         }
@@ -55,23 +55,25 @@
 
     /* menu fade in animation */
 
-    &--animation{
-        
+    &--animation {
+
         animation: fade-in 2000ms both;
+
         @for $i from 1 through 10 {
             &--#{$i} {
-            animation-delay: 2000ms / 10 * $i;
+                animation-delay: 2000ms / 10 * $i;
             }
         }
 
     }
-   
+
 }
 
-@keyframes fade-in{
+@keyframes fade-in {
     0% {
-        opacity: 0;   
+        opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -79,60 +81,60 @@
 
 /* menu fade in animation fin */
 
-.card-content{
+.card-content {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     padding: 0px 25px 0px 15px;
     box-sizing: border-box;
 
-    &__price{
+    &__price {
         margin: 0;
         margin-bottom: 10px;
-    }   
+    }
 
-    &--change-align{
+    &--change-align {
         align-items: end;
         padding: 0px 15px 0px 15px;
     }
 
-    &--animation{
+    &--animation {
         width: 100%;
         transition: width 500ms;
     }
-    
+
 }
 
-.card-icons{
+.card-icons {
     position: relative;
 
     /* heart animation */
 
-    &:hover{
-        .card-icons__heart--empty{
+    &:hover {
+        .card-icons__heart--empty {
             opacity: 0;
         }
 
-        .card-icons__heart--full{
+        .card-icons__heart--full {
             opacity: 1;
         }
     }
 
     /* heart animation fin */
 
-    &__heart{
+    &__heart {
         margin-top: 12px;
         padding: 10px 1px;
 
-        &--empty{
+        &--empty {
             opacity: 1;
             transition: opacity 100ms;
         }
-    
-        &--full{
+
+        &--full {
             position: absolute;
             right: 0;
-            left:0;
+            left: 0;
             background: linear-gradient($primary-color, $second-color);
             background-clip: text;
             -webkit-background-clip: text;
@@ -145,43 +147,43 @@
 
 }
 
-.card-textes{
+.card-textes {
     display: flex;
     flex-direction: column;
 
-    &__title{
-            font-size: 18px;
-            margin-top: 10px;
-            margin-bottom: 5px;
+    &__title {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 5px;
 
-            &--animation{
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
+        &--animation {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
-    &__location{
-            margin: 0;
-            margin-bottom: 15px;
+    &__location {
+        margin: 0;
+        margin-bottom: 15px;
 
-            &--modifications{
-                margin-bottom: 10px;
-                font-size: 15px; 
-            }
-    
-            &--animation{
-                overflow: hidden;
-                text-overflow: ellipsis;
-            }
+        &--modifications {
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+
+        &--animation {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
-    &--animation{
+    &--animation {
         white-space: nowrap;
         overflow: hidden;
     }
 }
 
-.card-hidden{
+.card-hidden {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -191,8 +193,8 @@
     background-color: $tertiary-color;
     transform: translateX(100%);
     transition: transform 500ms;
-    
-    &__icon{
+
+    &__icon {
         background-color: white;
         padding: 3px 3px;
         border-radius: 50px;
@@ -206,19 +208,19 @@
 /* Medium devices (tablets, more than 768px) */
 @media (min-width: 769px) {
 
-    .card{
+    .card {
         width: 46%;
         margin-bottom: 50px;
-        
-        &__image{
+
+        &__image {
             object-position: 0% 81%;
 
-            &--reposition{
+            &--reposition {
                 object-position: 0% 58%;
             }
         }
 
-        &--page-restaurant{
+        &--page-restaurant {
             width: 100%;
             margin-bottom: 15px;
         }

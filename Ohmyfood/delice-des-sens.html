@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,12 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="css/main.css" rel="stylesheet">
+    <link href="scss/main.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="main-container">
         <header class="main-header">
-            <nav class="header-nav">
+            <nav class="main-header__nav">
                 <a class="cta" href="index.html">
                     <i class="cta__icon fa-solid fa-arrow-left fa-lg"></i>
                 </a>
@@ -24,13 +26,13 @@
         </header>
         <main>
             <div class="page-restaurant">
-                <div class="page-restaurant-container">
-                    <img class="page-restaurant-container__image page-restaurant-container__image--delice-reposition" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image restaurant Le délice des sens">
+                <div class="page-restaurant__container">
+                    <img class="page-restaurant__image page-restaurant__image--delice-reposition" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Image restaurant Le délice des sens">
                 </div>
                 <section class="restaurant-menu">   
-                    <div class="restaurant-menu-container">
-                        <div class="menu-container-title">
-                            <h2 class="menu-container-title__text">Le délice des sens</h2>
+                    <div class="restaurant-menu__container">
+                        <div class="restaurant-menu__title">
+                            <h2>Le délice des sens</h2>
                             <div class="card-icons">
                                 <i class="card-icons__heart card-icons__heart--empty fa-regular fa-heart fa-xl"></i>
                                 <i class="card-icons__heart card-icons__heart--full fa-solid fa-heart fa-xl"></i>
@@ -153,7 +155,7 @@
                                 </div>
                             </article>
                         </div>
-                        <div class="btn-order-container">
+                        <div class="btn__container">
                         <a class="btn btn--order" href="#">Commander</a>   
                         </div>
                     </div>
@@ -161,13 +163,15 @@
             </div>
         </main>
         <footer class="main-footer">
-            <div class="footer-container">
-                <img class="footer-container__logo" src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
-                <ul class="footer-container-list">
-                <li class="footer-container-list__iconline footer-container-list__iconline--space-one"><i class="fa-solid fa-utensils fa-xs"></i>Proposer un restaurant</li>
-                <li class="footer-container-list__iconline footer-container-list__iconline--space-two"><i class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</li>
-                <li>Mentions légales</li>
-                <li><a class="cta cta--contact" href="mailto:contact@ohmyfood.com">Contact</a></li>
+            <div class="main-footer__container">
+                <img class="main-footer__logo" src="images/logo/ohmyfood@2x.svg" alt="logo Ohmyfood">
+                <ul class="main-footer-list">
+                    <li class="main-footer-list__iconline main-footer-list__iconline--space-one"><i
+                            class="fa-solid fa-utensils fa-xs"></i>Proposer un restaurant</li>
+                    <li class="main-footer-list__iconline main-footer-list__iconline--space-two"><i
+                            class="fa-solid fa-handshake-angle fa-xs"></i>Devenir partenaire</li>
+                    <li>Mentions légales</li>
+                    <li><a class="cta cta--contact" href="mailto:contact@ohmyfood.com">Contact</a></li>
                 </ul>
             </div>
         </footer>

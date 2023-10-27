@@ -1,27 +1,20 @@
 /********** HEADER **********/
-.main-header{
+.main-header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 18px 20px;
     background-color: $white-bg-color;
-    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.2)); 
-    
-        &__logo{
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.2));
+
+    &__logo {
         width: 165px;
-        }
-}
+    }
 
-.main-header-container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-
-}
-
-.header-nav{
-    position: absolute;
-    left: 20px;
+    &__nav {
+        position: absolute;
+        left: 20px;
+    }
 }
 
 /********** HEADER FIN **********/
@@ -30,12 +23,12 @@
 /* Medium devices (tablets, more than 768px) */
 @media (min-width: 769px) {
 
-    .main-header{
+    .main-header {
         padding: 30px 20px;
 
-            &__logo{
+        &__logo {
             width: 200px;
-            }
+        }
     }
 
 }
