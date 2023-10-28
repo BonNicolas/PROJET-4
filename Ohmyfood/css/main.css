@@ -448,8 +448,8 @@
      object-fit: cover;
 }
 .page-restaurant__image--palette-reposition {
-  -o-object-position: 0% 63%;
-     object-position: 0% 63%;
+  -o-object-position: 50% 63%;
+     object-position: 50% 63%;
 }
 .page-restaurant__image--note-reposition {
   -o-object-position: 0% 60%;
@@ -460,8 +460,8 @@
      object-position: 0% 90%;
 }
 .page-restaurant__image--delice-reposition {
-  -o-object-position: 0% 100%;
-     object-position: 0% 100%;
+  -o-object-position: 20% 100%;
+     object-position: 20% 100%;
 }
 
 .restaurant-menu {
