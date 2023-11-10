@@ -169,11 +169,9 @@
   /* heart animation */
   /* heart animation fin */
 }
-.card-icons:hover .card-icons__heart--empty {
-  opacity: 0;
-}
 .card-icons:hover .card-icons__heart--full {
-  opacity: 1;
+  transform: scaleY(100%);
+  animation: fade-in-heart 200ms forwards;
 }
 .card-icons__heart {
   margin-top: 12px;
@@ -192,10 +190,34 @@
   -webkit-background-clip: text;
   -moz-background-clip: text;
   color: transparent;
-  opacity: 0;
-  transition: opacity 500ms;
+  transform-origin: 50% 10%;
+  transform: scaleY(0%);
+  transition: transform 400ms;
+  animation: fade-out-heart 300ms reverse backwards;
 }
 
+@keyframes fade-in-heart {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-out-heart {
+  100% {
+    opacity: 1;
+  }
+  97% {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
+}
 .card-textes {
   display: flex;
   flex-direction: column;
